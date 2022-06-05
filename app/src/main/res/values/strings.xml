@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">NFT store</string>
+
+    <string name="login_signup_trans">login_signup_trans</string>
+    <string name="wave_tran">wave_transition</string>
+    <string name="wave2_tran">wave2_transition</string>
+    <string name="password_editText_tran">password_trans</string>
+    <string name="email_editText_tran">email_trans</string>
+    <string name="signup_btn_tran">signup_button_trans</string>
+    <string name="login_signup_logo_tran">logo_tran</string>
+    <string name="login_signup_view_tran">login_signup_view_tran</string>
+</resources>

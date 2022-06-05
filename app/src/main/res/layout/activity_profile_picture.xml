@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfilePictureActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="30sp"
+        android:text="Profile"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:textColor="@color/theme"/>
+
+    <ImageView
+        android:id="@+id/wave12"
+        android:layout_width="0dp"
+        android:layout_height="100sp"
+        android:layout_marginLeft="100sp"
+        android:alpha="0.3"
+        android:transitionName="@string/wave2_tran"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_wave"
+        app:layout_constraintBottom_toBottomOf="@+id/wave11"
+        app:layout_constraintStart_toStartOf="@+id/wave11"
+        app:layout_constraintTop_toTopOf="@+id/wave11" />
+
+    <ImageView
+        android:id="@+id/wave11"
+        android:layout_width="wrap_content"
+        android:layout_height="120sp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_wave"
+        android:layout_marginTop="150sp"
+        android:transitionName="@string/wave_tran"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/profile_image_layout" />
+
+    <View
+        android:id="@+id/loginComponentView"
+        android:layout_width="0dp"
+        android:layout_height="0sp"
+        android:background="@color/theme"
+        android:transitionName="@string/login_signup_view_tran"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wave11" />
+
+    <TextView
+        android:id="@+id/textToInform"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50sp"
+        android:text="Can ask for some other \ndetails"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:layout_marginTop="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_image_layout" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/profileDoneBtn"
+        android:layout_width="0dp"
+        android:layout_height="45sp"
+        android:layout_marginHorizontal="50sp"
+        android:background="@drawable/login_signup_bg"
+        android:text="done"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:transitionName="@string/signup_btn_tran"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textToInform" />
+
+    <RelativeLayout
+        android:id="@+id/profile_image_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="1sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginBottom="200sp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="330dp"
+            android:layout_height="330dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/resize"
+            app:civ_border_color="#00ADFF"
+            app:civ_border_width="3dp" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_camera"
+            app:backgroundTint="#00ADFF"
+            app:tint="@color/white"
+            app:elevation="1sp"
+            app:borderWidth="0sp"
+            app:fabSize="mini"
+            android:layout_toEndOf="@+id/profile_image"
+            />
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
