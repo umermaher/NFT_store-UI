@@ -13,7 +13,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="30sp"
+        android:layout_marginTop="40sp"
         android:text="Profile"
         android:textSize="40sp"
         android:textStyle="bold"
@@ -93,14 +93,17 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginBottom="200sp">
+        android:layout_marginBottom="200sp"
+        android:layout_marginEnd="5sp"
+        android:layout_marginStart="5sp"
+        android:layout_marginTop="5sp">
 
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/profile_image"
             android:layout_width="330dp"
             android:layout_height="330dp"
             android:layout_centerInParent="true"
-            android:src="@drawable/resize"
+            android:src="@drawable/profile"
             app:civ_border_color="#00ADFF"
             app:civ_border_width="3dp" />
 
