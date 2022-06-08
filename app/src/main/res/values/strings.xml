@@ -9,6 +9,7 @@
     <string name="signup_btn_tran">signup_button_trans</string>
     <string name="login_signup_logo_tran">logo_tran</string>
     <string name="login_signup_view_tran">login_signup_view_tran</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="nft_image_tran">nft_image_tran</string>
+
+    <string name="exampleText">Grab the newest collection of today from here, just click on the below button and make the awesome nfts yours</string>
 </resources>

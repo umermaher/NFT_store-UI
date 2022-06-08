@@ -2,6 +2,7 @@ plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
     id 'kotlin-android-extensions'
+    id 'androidx.navigation.safeargs.kotlin'
 }
 
 android {
@@ -15,6 +16,10 @@ android {
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildFeatures{
+        viewBinding true
     }
 
     buildTypes {
@@ -52,7 +57,7 @@ dependencies {
 
     implementation 'com.flaviofaria:kenburnsview:1.0.7'
 //    implementation 'com.eightbitlab:blurview:2.0.0'
-    implementation 'com.github.Dimezis:BlurView:version-2.0.0'
+//    implementation 'com.github.Dimezis:BlurView:version-2.0.0'
 
     //custom tablayout
     implementation 'com.github.hackware1993:MagicIndicator:1.6.0' // for support lib

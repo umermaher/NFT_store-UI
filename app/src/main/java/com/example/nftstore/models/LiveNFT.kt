@@ -1,4 +1,4 @@
-package com.example.nftstore
+package com.example.nftstore.models
 
 data class LiveNFT(
     val nftName:String?=null,

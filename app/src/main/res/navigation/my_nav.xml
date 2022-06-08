@@ -7,17 +7,17 @@
 
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.example.nftstore.HomeFragment"
+        android:name="com.example.nftstore.fragments.HomeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" />
     <fragment
         android:id="@+id/searchNFTFragment"
-        android:name="com.example.nftstore.SearchNFTFragment"
+        android:name="com.example.nftstore.fragments.SearchNFTFragment"
         android:label="fragment_search_n_f_t"
         tools:layout="@layout/fragment_search_nft" />
     <fragment
         android:id="@+id/favouriteNFTFragment"
-        android:name="com.example.nftstore.FavouriteNFTFragment"
+        android:name="com.example.nftstore.fragments.FavouriteNFTFragment"
         android:label="fragment_favourite_n_f_t"
         tools:layout="@layout/fragment_favourite_nft" />
 </navigation>

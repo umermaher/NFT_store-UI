@@ -1,4 +1,4 @@
-package com.example.nftstore
+package com.example.nftstore.ui
 
 import android.app.ActivityOptions
 import android.content.Intent
@@ -6,9 +6,9 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Pair
 import android.view.View
+import com.example.nftstore.R
 import kotlinx.android.synthetic.main.activity_login.*
 import kotlinx.android.synthetic.main.activity_login.loginComponentView
-import kotlinx.android.synthetic.main.activity_sign_up.*
 
 class LoginActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -18,7 +18,7 @@ class LoginActivity : AppCompatActivity() {
         loginSignupBtn.setOnClickListener {
             loginLoginBtn.animate().alpha(0f).duration=800L
 
-            val intent=Intent(this,SignUpActivity::class.java)
+            val intent=Intent(this, SignUpActivity::class.java)
 
 //            startActivity(intent)
             val pair= arrayOf(

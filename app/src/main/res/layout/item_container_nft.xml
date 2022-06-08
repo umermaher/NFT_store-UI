@@ -4,7 +4,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:elevation="10sp"
+    app:cardElevation="10sp"
+    android:id="@+id/itemParentLayout"
+    android:transitionName="@string/nft_image_tran"
     app:cardCornerRadius="40sp"
     android:layout_margin="10sp">
 
@@ -21,14 +23,15 @@
             android:layout_margin="10sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Live 🔥"
-                    android:layout_centerInParent="true"
-                    android:textColor="@color/white"
-                    android:textSize="16sp"
-                    android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Live 🔥"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
         </RelativeLayout>
 
         <ImageView
@@ -47,7 +50,21 @@
                 app:layout_constraintStart_toStartOf="parent">
 
                 <!--Any child View here, TabLayout for example. This View will NOT be blurred -->
-                <TextClock
+<!--                <TextClock-->
+<!--                    android:id="@+id/liveTimeText"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginRight="20sp"-->
+<!--                    android:text="06:07:44"-->
+<!--                    android:textColor="@color/white"-->
+<!--                    android:textSize="20sp"-->
+<!--                    android:textStyle="bold"-->
+<!--                    app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                    app:layout_constraintEnd_toEndOf="parent"-->
+<!--                    app:layout_constraintTop_toTopOf="parent"-->
+<!--                    android:format12Hour="hh:mm:ss"-->
+<!--                    tools:targetApi="jelly_bean_mr1" />-->
+                <TextView
                     android:id="@+id/liveTimeText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -58,9 +75,8 @@
                     android:textStyle="bold"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    android:format12Hour="hh:mm:ss"
-                    tools:targetApi="jelly_bean_mr1" />
+                    app:layout_constraintTop_toTopOf="parent" />
+
 
                 <TextView
                     android:id="@+id/nftNameText"
