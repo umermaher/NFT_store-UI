@@ -77,7 +77,7 @@ class HomeFragment : Fragment() {
             val nft=nftList[position]
             intent.putExtra("nftName",nft.nftName)
             intent.putExtra("nftImageUrl",nft.nftImageUrl)
-            intent.putExtra("nftOwners",nft.owners)
+            intent.putExtra("nftOwner",nft.nftOwner)
             intent.putExtra("nftLiveTime",nft.nftLiveTime)
             intent.putExtra("nftAbout",nft.about)
             intent.putExtra("nftHistory",nft.history)
@@ -115,7 +115,7 @@ class HomeFragment : Fragment() {
             LiveNFT(
                 "MONKEY GANG",
                 "https://public.nftstatic.com/static/nft/res/b2635abfc19d4df481b525ff55066ca3.jpeg",
-                "PleaseHelpMeee",
+                "Umer-Mahar",
                 "",
                 "say hello to the monkey gang they are so impatient only 1000 unique By Hestiart",
                 "xvz",
@@ -127,7 +127,7 @@ class HomeFragment : Fragment() {
             LiveNFT(
                 "Happy Man",
                 "https://public.nftstatic.com/static/nft/res/de7cfdf9f8234d179ac96539d1f0d321.jpeg",
-                "pancakeart",
+                "Pancakeart",
                 "",
                 "Happy Man #87 34/50 (N) Laughter roams the Metaverse. Everyone talks about a different appearance about the owner of this Laughter. Have you ever heard of this Laughter? If you have heard, the owner of this Laughter is definitely ''Happy Man''. Because he is the happiest person in the entire Metaverse and digitaly coded to keep its new owner happy. Rarity: N Total Supply: 3333 NFTs Unique: 99 Happy Man NFT Size: 2048x2048 Pixels",
                 "xvz",

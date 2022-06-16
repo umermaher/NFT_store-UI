@@ -163,7 +163,7 @@
                         app:layout_constraintTop_toTopOf="parent" />
 
                     <TextView
-                        android:id="@+id/textView2"
+                        android:id="@+id/AtTheRateNftOwnerText"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="10sp"
@@ -176,11 +176,12 @@
                         app:layout_constraintTop_toTopOf="@+id/circleImageView" />
 
                     <TextView
+                        android:id="@+id/nftOwnerText"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Umer-Mahar"
-                        app:layout_constraintStart_toStartOf="@+id/textView2"
-                        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+                        app:layout_constraintStart_toStartOf="@+id/AtTheRateNftOwnerText"
+                        app:layout_constraintTop_toBottomOf="@+id/AtTheRateNftOwnerText" />
 
                     <TextView
                         android:id="@+id/textView3"
@@ -242,11 +243,23 @@
                         android:text="Owners" />
                 </com.google.android.material.tabs.TabLayout>
 
-                <TextView
-                    android:layout_width="wrap_content"
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:paddingHorizontal="20sp"-->
+<!--                    android:id="@+id/aboutText"-->
+<!--                    android:text="@string/aboutText" />-->
+                <kr.co.prnd.readmore.ReadMoreTextView
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingHorizontal="20sp"
-                    android:text="@string/aboutText" />
+                    android:text="@string/aboutText"
+                    android:textColor="#686868"
+                    app:readMoreColor="@color/theme"
+                    app:readMoreMaxLine="4"
+                    android:id="@+id/aboutText"
+                    app:readMoreText="…Read More" />
+
             </LinearLayout>
         </LinearLayout>
     </ScrollView>
@@ -262,7 +275,7 @@
         app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/priceText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="240.0"
@@ -278,9 +291,9 @@
         android:layout_width="23sp"
         android:layout_height="23sp"
         android:src="@drawable/ic_ethereum"
-        app:layout_constraintBottom_toBottomOf="@+id/textView4"
-        app:layout_constraintStart_toEndOf="@+id/textView4"
-        app:layout_constraintTop_toTopOf="@+id/textView4"
+        app:layout_constraintBottom_toBottomOf="@+id/priceText"
+        app:layout_constraintStart_toEndOf="@+id/priceText"
+        app:layout_constraintTop_toTopOf="@+id/priceText"
         android:layout_marginStart="5sp"/>
 
 

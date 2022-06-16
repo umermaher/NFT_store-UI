@@ -57,12 +57,5 @@ dependencies {
     implementation 'androidx.core:core-splashscreen:1.0.0-beta02'
 
     implementation 'com.squareup.picasso:picasso:2.8'
-
-    implementation 'com.flaviofaria:kenburnsview:1.0.7'
-//    implementation 'com.eightbitlab:blurview:2.0.0'
-//    implementation 'com.github.Dimezis:BlurView:version-2.0.0'
-
-    //custom tablayout
-    implementation 'com.github.hackware1993:MagicIndicator:1.6.0' // for support lib
-    implementation 'com.github.hackware1993:MagicIndicator:1.7.0' // for androidx
+    implementation 'kr.co.prnd:readmore-textview:1.0.0'
 }
