@@ -25,6 +25,7 @@ import kotlinx.android.synthetic.main.activity_login.*
 import kotlinx.android.synthetic.main.activity_profile_picture.*
 import kotlinx.android.synthetic.main.fragment_home.*
 import kotlinx.android.synthetic.main.fragment_home.view.*
+import kotlinx.android.synthetic.main.item_container_nft.*
 
 class HomeFragment : Fragment() {
     private var _binding: FragmentHomeBinding?=null
@@ -40,9 +41,11 @@ class HomeFragment : Fragment() {
         // Inflate the layout for this fragment
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
 
+//        adding items for main nft viewpager and new collection recycler view
         addItemsNFTs()
         addItemsNewCollections()
 
+        //implementing view pager for main nft
         val adapter= NFTAdapter(requireContext(),nftList,createOnNftClickListener())
 
         binding.nftViewPager.adapter=adapter
@@ -59,6 +62,7 @@ class HomeFragment : Fragment() {
         }
         binding.nftViewPager.setPageTransformer(compositePageTransformer)
 
+        ////implementing recycler view for new collection items
         val newCollectionAdapter=NewCollectionAdapter(newCollectionList)
         binding.rvNewCollections.layoutManager=LinearLayoutManager(requireContext())
         binding.rvNewCollections.setHasFixedSize(true)
@@ -80,7 +84,9 @@ class HomeFragment : Fragment() {
             intent.putExtra("nftPrice",nft.price)
 //            startActivity(intent)
             val pair= arrayOf(
-                Pair<View,String>(cardView,getString(R.string.nft_image_tran))
+                Pair<View,String>(cardView,getString(R.string.nft_image_tran)),
+                Pair<View,String>(liveLayout,getString(R.string.nft_live_tran))
+//                , Pair<View,String>(detailLayout,getString(R.string.nft_detail_tran))
             )
 
             val options= ActivityOptions.makeSceneTransitionAnimation(requireActivity(),*pair)

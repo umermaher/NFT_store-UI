@@ -19,8 +19,10 @@
             android:layout_width="80sp"
             android:layout_height="40sp"
             android:elevation="1sp"
+            android:id="@+id/liveLayout"
             android:background="@drawable/live_bg"
             android:layout_margin="10sp"
+            android:transitionName="@string/nft_live_tran"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
@@ -44,6 +46,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="80sp"
                 android:elevation="1sp"
+                android:id="@+id/detailLayout"
+                android:transitionName="@string/nft_detail_tran"
                 android:background="#99000000"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"

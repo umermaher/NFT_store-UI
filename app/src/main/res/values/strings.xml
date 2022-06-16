@@ -10,6 +10,10 @@
     <string name="login_signup_logo_tran">logo_tran</string>
     <string name="login_signup_view_tran">login_signup_view_tran</string>
     <string name="nft_image_tran">nft_image_tran</string>
+    <string name="nft_live_tran">nft_live_tran</string>
+    <string name="nft_detail_tran">nft_detail_tran</string>
 
     <string name="exampleText">Grab the newest collection of today from here, just click on the below button and make the awesome nfts yours</string>
+    <string name="aboutText">Abstract art NFTs is this collection combine algorithmic structure with coingecko API data plus a little bit MooniTooki technique to create unique and original, buy the awesome abstract art and feel it and enjoy it.</string>
 </resources>
+

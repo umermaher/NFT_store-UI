@@ -6,13 +6,22 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Pair
 import android.view.View
+import androidx.activity.viewModels
+import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import com.example.nftstore.R
+import com.example.nftstore.viewmodels.MainViewModel
 import kotlinx.android.synthetic.main.activity_login.*
 import kotlinx.android.synthetic.main.activity_login.loginComponentView
 
 class LoginActivity : AppCompatActivity() {
+    private val viewModel: MainViewModel by viewModels()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        installSplashScreen().apply {
+            setKeepOnScreenCondition{
+                viewModel.isLoading.value
+            }
+        }
         setContentView(R.layout.activity_login)
 
         loginSignupBtn.setOnClickListener {
